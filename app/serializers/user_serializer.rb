@@ -3,6 +3,6 @@ class UserSerializer
 
   attributes :email, :age
   set_type :usuario
-  has_one :profile, record_type: :perfil
-  has_many :articles, record_type: :artigo
+  has_one :profile
+  has_many :articles
 end

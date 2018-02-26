@@ -1,5 +1,8 @@
 class UsersController < ApplicationController
   def index
-    render json: UserSerializer.new(User.all).serialized_json
+    options = {}
+    options[:meta] = { total_itens: User.all.count, teste_key: 'teste' }
+
+    render json: UserSerializer.new(User.all, options).serialized_json
   end
 end
