@@ -33,5 +33,7 @@ module TestRails52
     config.api_only = true
     config.eager_load_paths << Rails.root.join('app/serializers')
     config.i18n.default_locale = :'pt-BR'
+
+    config.middleware.use Rack::Attack
   end
 end
