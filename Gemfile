@@ -31,7 +31,15 @@ gem 'bootsnap', '>= 1.1.0', require: false
 # Fast api model serialize
 gem 'fast_jsonapi'
 
+gem 'devise'
+
 gem 'devise_token_auth'
+
+gem 'awesome_print'
+
+gem 'pry-rails'
+
+gem 'shog'
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem 'rack-cors'

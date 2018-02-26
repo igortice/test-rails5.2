@@ -31,5 +31,7 @@ module TestRails52
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
+    config.eager_load_paths << Rails.root.join('app/serializers')
+    config.i18n.default_locale = :'pt-BR'
   end
 end
